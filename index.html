@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/6e1ee9fe0307148df084a0c950691a18?family=Edwardian+Script+ITC+Regular+Alternate">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .section {
+            width: 50%;
+            text-align: center;
+            position: relative;
+        }
+
+        .section img {
+            width: 150%;
+            max-width: 1800px;
+            margin-right: 240px;
+            margin-bottom: 20px;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            font-family: "Edwardian Script ITC Regular Alternate";
+            font-weight: 400;
+            font-size: 4rem;
+            color: #fff;
+            text-align: center;
+            width: 80%;
+            line-height: 1.5;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 5s forwards;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        .hello {
+            background-color: #15434d;
+            border: 3px solid #fff;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin: 0 5px;
+            outline: none!important;
+            padding: 13px 50px;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .hello:hover {
+            background-color: #15434d; 
+        }
+
+        .MuiFormControl-root {
+            width: 100%;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .MuiOutlinedInput-input {
+            padding: 15px;
+            border-radius: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            width: calc(100% - 30px);
+            transition: border-color 0.3s, font-size 0.3s;
+        }
+
+        .MuiFormLabel-root {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            transition: 0.2s ease all;
+            pointer-events: none;
+            font-size: 16px;
+            color: #888;
+            background-color: #fff;
+            padding: 0 5px;
+        }
+
+        .MuiFormControl-root:hover .MuiOutlinedInput-input {
+            border-color: #ddd;
+        }
+
+        .MuiFormControl-root.Mui-focused .MuiOutlinedInput-input {
+            border-color: #56b124;
+            font-size: smaller;
+        }
+
+        .MuiFormControl-root.Mui-focused .MuiFormLabel-root {
+            top: 5px;
+            font-size: 10px;
+            border-color: #56b124;
+        }
+
+        @media screen and (max-width: 767px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                width: 100%;
+                margin: 20px 0;
+                text-align: center; 
+            }
+
+            .text-overlay {
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 100%; /* Adjust the width as needed */
+                bottom: -115px;
+                top: auto;
+                font-size: 2.8rem;
+                visibility: visible;
+                right: 50%;
+            }
+
+            .section img {
+                width: 150%;
+                max-width: 130%;
+                margin-right: 0;
+                margin-bottom: -100px;
+                margin-top: 0;
+                bottom: 100px;
+                top: auto;
+                visibility: visible;
+            }
+
+            .form {
+                margin-top: 2px; 
+            }
+
+            .hello {
+                background-color: #15434d;
+                border: 3px solid #fff;
+                border-radius: 50px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+                color: #fff;
+                cursor: pointer;
+                font-size: 1.1rem;
+                margin: 0 4px;
+                outline: none!important;
+                padding: 8px 35px;
+                padding-left: 26px;
+                text-decoration: none;
+                transition: .3s;
+                width: 120px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <img src="banner5.ce278dbb4ddfd516d550.png" alt="Your Image">
+            <div class="text-overlay">"Be a part of solution<br>not a part of pollution"<br>
+               <a><button class="hello">Sign Up</button></a></div>
+        </div>
+
+        <div class="section">
+            <h1>Sign In</h1>
+            <form class="form">
+                <div class="signin__type__btns">
+                    <button class="signin__type active" fdprocessedid="b49myef">Customer</button>
+                    <button class="signin__type" fdprocessedid="207vy">Dealer</button>
+                </div>
+
+                <div class="MuiFormControl-root MuiTextField-root input css-i44wyl">
+                    <div class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v4ccyo">
+                        <input type="email" class="MuiOutlinedInput-input" id="email" required>
+                        <label class="MuiFormLabel-root" for="email">Email ID&nbsp;*</label>
+                    </div>
+                </div>
+
+                <div class="MuiFormControl-root form__control css-13sljp9">
+                    <div required="" class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd input css-1bn53lx">
+                        <input type="password" class="MuiOutlinedInput-input" id="password" required>
+                        <label class="MuiFormLabel-root" for="password">Password&nbsp;*</label>
+                    </div>
+                </div>
+
+                <a class="forgot__password__link" href="enter your email">Forgot Password?</a>
+                <button class="form__button" type="submit" fdprocessedid="mgto8i">Sign In</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
